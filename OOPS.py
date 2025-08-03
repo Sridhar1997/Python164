@@ -190,18 +190,66 @@
 
 
 
-class Father:
-    def skills(self):
-        print("Gardening")
+# class Father:
+#     def skills(self):
+#         print("Gardening")
     
-class Mother:
-    def skills(self):
-        print("Cooking")
+# class Mother:
+#     def skills(self):
+#         print("Cooking")
 
-class Child(Father, Mother):
-    def ownskill(self):
-        print("Coding")
+# class Child(Father, Mother):
+#     def ownskill(self):
+#         print("Coding")
 
-c=Child()
-c.skills()
-c.ownskill()
+# c=Child()
+# c.skills()
+# c.ownskill()
+
+
+# class Parent:
+#     def message(self):
+#         print("Hello from Parent")
+
+# class Child1(Parent):
+#     def child1msg(self):
+#         print("Child 1 Speaking")
+
+# class Child2(Parent):
+#     def child2msg(self):
+#         print("Child 2 Speacking")
+        
+        
+# c1=Child1()
+# c1.message()
+# c1.child1msg()
+
+
+# c2=Child2()
+# c2.message()
+# c2.child2msg()
+
+
+
+class A:
+    def methodA(self):
+        print("Method A")
+
+class B(A):
+    def methodB(self):
+        print("Method B")
+
+class C:
+    def methodC(self):
+        print("Method C")
+    
+class D(B,C):
+    def methodD(self):
+        print("Method D")
+        
+        
+d=D()
+d.methodA()
+d.methodB()
+d.methodC()
+d.methodD()
